@@ -19,9 +19,9 @@ $rss = new SimpleXMLElement( $xml );
 
 // Add the channel;
 $canal = $rss->addChild( 'channel' );
-$canal->addChild( 'title', get_bloginfo( 'name' ) );
+$canal->addChild( 'title', $helper->fix_text( get_bloginfo( 'name' ) ) );
 $canal->addChild( 'link', get_home_url() );
-$canal->addChild( 'description', get_bloginfo( 'description' ) );
+$canal->addChild( 'description', $helper->fix_text( get_bloginfo( 'description' ) ) );
 
 // Create a new WP_Query.
 $feed_query = new WP_Query(
@@ -47,10 +47,10 @@ while ( $feed_query->have_posts() ) {
 
     // Basic Product Information.
     $item->addChild( 'g:id', get_the_ID(), $ns );
-    $item->addChild( 'title', get_the_title() );
-    $item->addChild( 'description', $options['description'] );
-    $item->addChild( 'g:google_product_category', $helper->fix_category( $options['category'] ), $ns );
-    $item->addChild( 'g:product_type', $helper->fix_category( $options['product_type'] ), $ns );
+    $item->addChild( 'title', $helper->fix_text( get_the_title() ) );
+    $item->addChild( 'description', $helper->fix_text( $options['description'] ) );
+    $item->addChild( 'g:google_product_category', $helper->fix_text( $options['category'] ), $ns );
+    $item->addChild( 'g:product_type', $helper->fix_text( $options['product_type'] ), $ns );
     $item->addChild( 'link', get_permalink() );
 
     $thumb = get_post_thumbnail_id();
@@ -71,7 +71,7 @@ while ( $feed_query->have_posts() ) {
 
     // Unique Product Identifiers.
     if ( isset( $options['active_unique'] ) ) {
-        $item->addChild( 'g:brand', $options['brand'], $ns );
+        $item->addChild( 'g:brand', $helper->fix_text( $options['brand'] ), $ns );
         $item->addChild( 'g:gtin', $options['gtin'], $ns );
         $item->addChild( 'g:mpn', $options['mpn'], $ns );
     }
@@ -110,7 +110,7 @@ while ( $feed_query->have_posts() ) {
     if ( isset( $options['active_apparel'] ) ) {
         $item->addChild( 'g:gender', $helper->fix_gender( $options['gender'] ), $ns );
         $item->addChild( 'g:age_group', $helper->fix_age_group( $options['age_group'] ), $ns );
-        $item->addChild( 'g:color', $options['color'], $ns );
+        $item->addChild( 'g:color', $helper->fix_text( $options['color'] ), $ns );
         $item->addChild( 'g:size', $options['size'], $ns );
     }
 
