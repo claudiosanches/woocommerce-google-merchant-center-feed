@@ -134,9 +134,6 @@ class WC_Ultimate_Google_Product_Feed_Helpers {
         // Fix new lines.
         $string = preg_replace('/\s\s+/', ' ', $string );
 
-        // Fix accents.
-        $string = str_replace( array( 'à','á','â','ã','ä', 'ç', 'è','é','ê','ë', 'ì','í','î','ï', 'ñ', 'ò','ó','ô','õ','ö', 'ù','ú','û','ü', 'ý','ÿ', 'À','Á','Â','Ã','Ä', 'Ç', 'È','É','Ê','Ë', 'Ì','Í','Î','Ï', 'Ñ', 'Ò','Ó','Ô','Õ','Ö', 'Ù','Ú','Û','Ü', 'Ý' ), array( '&agrave;','&aacute;','&acirc;','&atilde;','&auml;', '&ccedil;', '&egrave;','&eacute;','&ecirc;','&euml;', '&igrave;','&iacute;','&icirc;','&iuml;', '&ntilde;', '&ograve;','&oacute;','&ocirc;','&otilde;','&ouml;', '&ugrave;','&uacute;','&ucirc;','&uuml;', '&yacute;','&yuml;', '&Agrave;','&Aacute;','&Acirc;','&Atilde;','&Auml;', '&Ccedil;', '&Egrave;','&Eacute;','&Ecirc;','&Euml;', '&Igrave;','&Iacute;','&Icirc;','&Iuml;', '&Ntilde;', '&Ograve;','&Oacute;','&Ocirc;','&Otilde;','&Ouml;', '&Ugrave;','&Uacute;','&Ucirc;','&Uuml;', '&Yacute;' ), $string );
-
         return esc_attr( $string );
     }
 }
