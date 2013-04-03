@@ -4,7 +4,7 @@
  */
 
 // Helpers class.
-require_once WOO_UGPF_PATH . 'classes/class-helpers.php';
+require_once WOO_UGPF_PATH . 'includes/class-wcugpf-helpers.php.php';
 $helper = new WC_Ultimate_Google_Product_Feed_Helpers;
 
 // Get the currency
