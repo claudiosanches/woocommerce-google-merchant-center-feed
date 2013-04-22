@@ -30,6 +30,7 @@ $feed_query = new WP_Query(
         'post_status' => 'publish',
         'ignore_sticky_posts' => 1,
         'meta_key' => 'wc_ugpf_active',
+        'posts_per_page' => 10,
         // 'meta_value' => '1'
     )
 );
