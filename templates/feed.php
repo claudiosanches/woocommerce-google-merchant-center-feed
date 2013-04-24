@@ -3,6 +3,8 @@
  * Template Name: Google Product Feed
  */
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 // Helpers class.
 require_once WOO_UGPF_PATH . 'includes/class-wcugpf-helpers.php.php';
 $helper = new WC_Ultimate_Google_Product_Feed_Helpers;
