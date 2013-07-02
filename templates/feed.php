@@ -104,9 +104,8 @@ while ( $feed_query->have_posts() ) {
         }
 
         // Shipping Weight.
-        if ( ! empty( $options['shipping_weight'] ) ) {
+        if ( ! empty( $options['shipping_weight'] ) )
             $item->addChild( 'g:shipping_weight', $options['shipping_weight'], $ns );
-        }
     }
 
     // Apparel Products.
@@ -118,9 +117,8 @@ while ( $feed_query->have_posts() ) {
     }
 
     // Nearby Stores.
-    if ( isset( $options['online_only'] ) ) {
+    if ( isset( $options['online_only'] ) )
         $item->addChild( 'g:online_only', 'y', $ns );
-    }
 
     // Multiple Installments.
     if ( isset( $options['active_installments'] ) ) {
@@ -130,21 +128,17 @@ while ( $feed_query->have_posts() ) {
     }
 
     // Additional Attributes.
-    if ( isset( $options['excluded_destination_ps'] ) ) {
+    if ( isset( $options['excluded_destination_ps'] ) )
         $item->addChild( 'g:excluded_destination', 'Product Search', $ns );
-    }
 
-    if ( isset( $options['excluded_destination_pa'] ) ) {
+    if ( isset( $options['excluded_destination_pa'] ) )
         $item->addChild( 'g:excluded_destination', 'Product Ads', $ns );
-    }
 
-    if ( isset( $options['excluded_destination_cs'] ) ) {
+    if ( isset( $options['excluded_destination_cs'] ) )
         $item->addChild( 'g:excluded_destination', 'Commerce Search', $ns );
-    }
 
-    if ( ! empty( $options['expiration_date'] ) ) {
+    if ( ! empty( $options['expiration_date'] ) )
         $item->addChild( 'g:expiration_date', $options['expiration_date'], $ns );
-    }
 
 }
 
