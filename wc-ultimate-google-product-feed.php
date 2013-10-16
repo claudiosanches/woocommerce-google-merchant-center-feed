@@ -5,7 +5,7 @@
  * Description: Ultimate Google Product Feed.
  * Author: claudiosanches
  * Author URI: http://claudiosmweb.com/
- * Version: 1.0
+ * Version: 1.0.0
  * License: GPLv2 or later
  * Text Domain: wcugpf
  * Domain Path: /languages/
@@ -396,22 +396,19 @@ class WC_Ultimate_Google_Product_Feed {
      * Save tab meta.
      */
     function save_tab_options( $post_id ) {
-        if ( isset( $_POST['wc_ugpf_active'] ) ) {
+        if ( isset( $_POST['wc_ugpf_active'] ) )
             update_post_meta( $post_id, 'wc_ugpf_active', $_POST['wc_ugpf_active'] );
-        }
 
-        if ( isset( $_POST['wc_ugpf'] ) ) {
+        if ( isset( $_POST['wc_ugpf'] ) )
             update_post_meta( $post_id, 'wc_ugpf', $_POST['wc_ugpf'] );
-        }
     }
 
     /**
      * Add custom template page.
      */
     public function add_page_template( $page_template ) {
-        if ( is_page( 'product-feed' ) ) {
+        if ( is_page( 'product-feed' ) )
             $page_template = WOO_UGPF_PATH . 'templates/feed.php';
-        }
 
         return $page_template;
     }
