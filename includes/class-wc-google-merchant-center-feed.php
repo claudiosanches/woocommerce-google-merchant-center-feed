@@ -86,7 +86,7 @@ class WC_Google_Merchant_Center_Feed extends WC_Integration {
         $screen = get_current_screen();
 
         if ( 'product' === $screen->id )
-            wp_enqueue_script( 'wc-gmcf-metabox', WOO_GMCF_URL . '/assets/js/jquery.wc-gmcf.js', array( 'jquery' ), null, true );
+            wp_enqueue_script( 'wc-gmcf-metabox', WOO_GMCF_URL . '/assets/js/jquery.wc-gmcf.min.js', array( 'jquery' ), null, true );
     }
 
     /**
