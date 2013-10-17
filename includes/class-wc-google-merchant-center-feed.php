@@ -21,7 +21,7 @@ class WC_Google_Merchant_Center_Feed extends WC_Integration {
         $this->init_settings();
 
         // Define user set variables.
-        $this->page         = apply_filters( 'wc_ultimate_google_product_feed_page', sanitize_title( _x( 'product-feed', 'page slug', 'wcgmcf' ) ) );
+        $this->page         = apply_filters( 'wc_google_merchant_center_feed_page', sanitize_title( _x( 'product-feed', 'page slug', 'wcgmcf' ) ) );
         $this->items_total  = $this->get_option( 'items_total' );
         $this->category     = $this->get_option( 'category' );
         $this->product_type = $this->get_option( 'product_type' );

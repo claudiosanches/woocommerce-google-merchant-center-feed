@@ -277,7 +277,7 @@ class WC_GMCF_XML {
         wp_reset_postdata();
 
         // Filter the RSS.
-        $rss = apply_filters( 'wc_ultimate_google_product_feed_xml', $rss );
+        $rss = apply_filters( 'wc_google_merchant_center_feed_xml', $rss );
 
         // Format and print the XML.
         $dom = dom_import_simplexml( $rss )->ownerDocument;
