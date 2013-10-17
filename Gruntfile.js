@@ -121,6 +121,7 @@ module.exports = function(grunt) {
                     "!.git/**",
                     "!.gitignore",
                     "!.editorconfig",
+                    "!README.md",
                     "!Gruntfile.js",
                     "!package.json",
                     "!assets/js/jquery.wc-gmcf.js",
