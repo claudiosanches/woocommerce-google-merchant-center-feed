@@ -123,6 +123,7 @@ module.exports = function(grunt) {
                     "!.editorconfig",
                     "!Gruntfile.js",
                     "!package.json",
+                    "!assets/js/jquery.wc-gmcf.js",
                     "!**.zip"
                 ],
                 dest: "./<%= pkg.name %>-<%= pkg.version %>.zip"
