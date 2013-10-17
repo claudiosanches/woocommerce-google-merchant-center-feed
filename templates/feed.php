@@ -10,10 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 header( 'Content-type: application/xml' );
 
 // Helpers classes.
-require_once WOO_UGPF_PATH . 'includes/class-wc-ugpf-simplexml.php';
-require_once WOO_UGPF_PATH . 'includes/class-wc-ugpf-xml.php';
+require_once WOO_GMCF_PATH . 'includes/class-wc-gmcf-simplexml.php';
+require_once WOO_GMCF_PATH . 'includes/class-wc-gmcf-xml.php';
 
-$feed = new WC_UGPF_XML;
+$feed = new WC_GMCF_XML;
 echo $feed->render();
 
 exit;

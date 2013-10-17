@@ -4,7 +4,7 @@
  *
  * @since 1.0.0
  */
-class WC_UGPF_XML {
+class WC_GMCF_XML {
 
     /**
      * Fix Condition label.
@@ -129,7 +129,7 @@ class WC_UGPF_XML {
      */
     public function render() {
         // Settings.
-        $settings = get_option( 'woocommerce_google-product-feed_settings' );
+        $settings = get_option( 'woocommerce_google-merchant-center_settings' );
         $items_total = isset( $settings['items_total'] ) ? (int) $settings['items_total'] : 10;
 
         // Get the currency
@@ -140,7 +140,7 @@ class WC_UGPF_XML {
 
         // Create a Feed.
         $xml = '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:g="' . $ns . '"></rss>';
-        $rss = new WC_UGPF_SimpleXML( $xml );
+        $rss = new WC_GMCF_SimpleXML( $xml );
 
         // Add the channel.
         $channel = $rss->addChild( 'channel' );
@@ -154,7 +154,7 @@ class WC_UGPF_XML {
                 'post_type' => 'product',
                 'post_status' => 'publish',
                 'ignore_sticky_posts' => 1,
-                'meta_key' => 'wc_ugpf_active',
+                'meta_key' => 'wc_gmcf_active',
                 'posts_per_page' => $items_total
             )
         );
@@ -164,7 +164,7 @@ class WC_UGPF_XML {
             $feed_query->the_post();
 
             $item = $channel->addChild( 'item' );
-            $options = get_post_meta( get_the_ID(), 'wc_ugpf', true );
+            $options = get_post_meta( get_the_ID(), 'wc_gmcf', true );
             $regular_price = get_post_meta( get_the_ID(), '_regular_price', true );
             $sale_price = get_post_meta( get_the_ID(), '_sale_price', true );
             $sale_price_dates_from = get_post_meta( get_the_ID(), '_sale_price_dates_from', true );
@@ -191,7 +191,9 @@ class WC_UGPF_XML {
             $item->addChild( 'g:price', $regular_price . ' ' . $currency, $ns );
             if ( ! empty ( $sale_price ) ) {
                 $item->addChild( 'g:sale_price', $sale_price . ' ' . $currency, $ns );
-                $item->addChild( 'g:sale_price_effective_date', $this->fix_date( $sale_price_dates_from, $sale_price_dates_to ) , $ns );
+
+                if ( ! empty( $sale_price_dates_from ) && ! empty( $sale_price_dates_to )  )
+                    $item->addChild( 'g:sale_price_effective_date', $this->fix_date( $sale_price_dates_from, $sale_price_dates_to ) , $ns );
             }
 
             // Unique Product Identifiers.

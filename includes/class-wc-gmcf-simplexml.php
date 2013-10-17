@@ -4,7 +4,7 @@
  *
  * @since 1.0.0
  */
-class WC_UGPF_SimpleXML extends SimpleXMLElement {
+class WC_GMCF_SimpleXML extends SimpleXMLElement {
 
     /**
      * Add CDATA.
