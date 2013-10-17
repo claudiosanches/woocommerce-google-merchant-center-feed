@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: WooCommerce Ultimate Google Product Feed
- * Plugin URI: http://claudiosmweb.com/
- * Description: Ultimate Google Product Feed.
+ * Plugin URI: https://github.com/claudiosmweb/woocommerce-ultimate-google-product-feed
+ * Description: Creates a Feed to integrate with your Google Merchant Center.
  * Author: claudiosanches
  * Author URI: http://claudiosmweb.com/
  * Version: 1.0.0
@@ -18,7 +18,7 @@ define( 'WOO_UGPF_URL', plugin_dir_url( __FILE__ ) );
  * WooCommerce fallback notice.
  */
 function wcugpf_woocommerce_fallback_notice() {
-    echo '<div class="error"><p>' . sprintf( __( 'WooCommerce Ultimate Google Product Feed depends on the last version of %s to work!', 'wcugpf' ), '<a href="http://wordpress.org/extend/plugins/woocommerce/">WooCommerce</a>' ) . '</p></div>';
+    echo '<div class="error"><p>' . sprintf( __( 'WooCommerce Ultimate Google Product Feed depends on the last version of %s to work!', 'wcugpf' ), '<a href="http://wordpress.org/extend/plugins/woocommerce/">' . __( 'WooCommerce', 'wcugpf' ) . '</a>' ) . '</p></div>';
 }
 
 /**
@@ -26,17 +26,17 @@ function wcugpf_woocommerce_fallback_notice() {
  */
 function wcugpf_gateway_load() {
 
+    /**
+     * Load textdomain.
+     */
+    load_plugin_textdomain( 'wcugpf', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
     // Checks with WooCommerce is installed.
     if ( ! class_exists( 'WC_Integration' ) ) {
         add_action( 'admin_notices', 'wcugpf_woocommerce_fallback_notice' );
 
         return;
     }
-
-    /**
-     * Load textdomain.
-     */
-    load_plugin_textdomain( 'wcugpf', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
     /**
      * Add a new integration to WooCommerce.

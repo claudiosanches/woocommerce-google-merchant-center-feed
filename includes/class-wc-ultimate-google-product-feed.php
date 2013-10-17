@@ -14,7 +14,7 @@ class WC_Ultimate_Google_Product_Feed extends WC_Integration {
     public function __construct() {
         $this->id                 = 'google-product-feed';
         $this->method_title       = __( 'Google Product Feed', 'wcugpf' );
-        $this->method_description = __( 'Creates a XML to integrate with Google Product Feed.', 'wcugpf' );
+        $this->method_description = __( 'Creates a Feed to integrate with your Google Merchant Center.', 'wcugpf' );
 
         // Load the settings.
         $this->init_form_fields();
@@ -93,7 +93,7 @@ class WC_Ultimate_Google_Product_Feed extends WC_Integration {
      * Add new tab.
      */
     public function add_tab() {
-        echo '<li class="advanced_tab advanced_options wc_ugpf_tab"><a href="#wc_ugpf_tab">' . __( 'Google Product', 'wcugpf' ) . '</a></li>';
+        echo '<li class="advanced_tab advanced_options wc_ugpf_tab"><a href="#wc_ugpf_tab">' . __( 'Google Merchant', 'wcugpf' ) . '</a></li>';
     }
 
     /**
@@ -112,7 +112,7 @@ class WC_Ultimate_Google_Product_Feed extends WC_Integration {
                         array(
                             'id' => 'wc_ugpf_active',
                             'label' => __( 'Include in Product Feed?', 'wcugpf' ),
-                            'description' => __( 'Enable this option to include in Google products Feed', 'wcugpf' ),
+                            'description' => __( 'Enable this option to include in this product in your Product Feed', 'wcugpf' ),
                             'value' => isset( $active ) ? $active : ''
                         )
                     );

@@ -1,15 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WooCommerce Ultimate Google Product Feed v1.0\n"
+"Project-Id-Version: WooCommerce Ultimate Google Product Feed v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-01-22 23:35:47+0000\n"
+"PO-Revision-Date: 2013-10-17 00:01:47+0000\n"
 "Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -19,52 +20,52 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: wc-ultimate-google-product-feed.php:117
+#: includes/class-wc-ultimate-google-product-feed.php:160
 #@ wcugpf
 msgid "used"
 msgstr "usado"
 
-#: wc-ultimate-google-product-feed.php:118
+#: includes/class-wc-ultimate-google-product-feed.php:161
 #@ wcugpf
 msgid "refurbished"
 msgstr "recondicionado"
 
-#: wc-ultimate-google-product-feed.php:116
+#: includes/class-wc-ultimate-google-product-feed.php:159
 #@ wcugpf
 msgid "new"
 msgstr "novo"
 
-#: wc-ultimate-google-product-feed.php:134
+#: includes/class-wc-ultimate-google-product-feed.php:177
 #@ wcugpf
 msgid "available for order"
 msgstr "disponível sob encomenda"
 
-#: wc-ultimate-google-product-feed.php:135
+#: includes/class-wc-ultimate-google-product-feed.php:178
 #@ wcugpf
 msgid "out of stock"
 msgstr "esgotado"
 
-#: wc-ultimate-google-product-feed.php:136
+#: includes/class-wc-ultimate-google-product-feed.php:179
 #@ wcugpf
 msgid "preorder"
 msgstr "pedido antecipado"
 
-#: wc-ultimate-google-product-feed.php:133
+#: includes/class-wc-ultimate-google-product-feed.php:176
 #@ wcugpf
 msgid "in stock"
 msgstr "em estoque"
 
-#: wc-ultimate-google-product-feed.php:258
+#: includes/class-wc-ultimate-google-product-feed.php:301
 #@ wcugpf
 msgid "female"
 msgstr "feminino"
 
-#: wc-ultimate-google-product-feed.php:259
+#: includes/class-wc-ultimate-google-product-feed.php:302
 #@ wcugpf
 msgid "unisex"
 msgstr "unissex"
 
-#: wc-ultimate-google-product-feed.php:257
+#: includes/class-wc-ultimate-google-product-feed.php:300
 #@ wcugpf
 msgid "male"
 msgstr "masculino"
@@ -75,18 +76,11 @@ msgstr "masculino"
 msgid "WooCommerce Ultimate Google Product Feed"
 msgstr "WooCommerce Ultimate Google Product Feed"
 
-#. translators: plugin header field 'PluginURI'
 #. translators: plugin header field 'AuthorURI'
 #: wc-ultimate-google-product-feed.php:0
 #@ wcugpf
 msgid "http://claudiosmweb.com/"
 msgstr "http://claudiosmweb.com/"
-
-#. translators: plugin header field 'Description'
-#: wc-ultimate-google-product-feed.php:0
-#@ wcugpf
-msgid "Ultimate Google Product Feed Advanced."
-msgstr "Ultimate Google Product Feed Advanced."
 
 #. translators: plugin header field 'Author'
 #: wc-ultimate-google-product-feed.php:0
@@ -94,333 +88,402 @@ msgstr "Ultimate Google Product Feed Advanced."
 msgid "claudiosanches"
 msgstr "claudiosanches"
 
-#. translators: plugin header field 'Version'
-#: wc-ultimate-google-product-feed.php:0
-#@ wcugpf
-msgid "1.0"
-msgstr "1.0"
-
-#: wc-ultimate-google-product-feed.php:53
-#@ wcugpf
-msgid "Google Product"
-msgstr "Google Product"
-
-#: wc-ultimate-google-product-feed.php:71
+#: includes/class-wc-ultimate-google-product-feed.php:114
 #@ wcugpf
 msgid "Include in Product Feed?"
 msgstr "Incluir no Feed de Produtos"
 
-#: wc-ultimate-google-product-feed.php:72
-#@ wcugpf
-msgid "Enable this option to include in Google products Feed"
-msgstr "Ative essa opção para incluir no Feed de Produtos do Google"
-
-#: wc-ultimate-google-product-feed.php:77
+#: includes/class-wc-ultimate-google-product-feed.php:65
+#: includes/class-wc-ultimate-google-product-feed.php:120
 #@ wcugpf
 msgid "Products Feed Specification"
 msgstr "Especificação de Feed de produtos"
 
-#: wc-ultimate-google-product-feed.php:81
+#: includes/class-wc-ultimate-google-product-feed.php:124
 #@ wcugpf
 msgid "Basic Product Information"
 msgstr "Informações básicas de produto"
 
-#: wc-ultimate-google-product-feed.php:87
+#: includes/class-wc-ultimate-google-product-feed.php:130
 #@ wcugpf
 msgid "Description"
 msgstr "Descrição"
 
-#: wc-ultimate-google-product-feed.php:88
+#: includes/class-wc-ultimate-google-product-feed.php:131
 #@ wcugpf
 msgid "Description of the item"
 msgstr "Descrição do item"
 
-#: wc-ultimate-google-product-feed.php:96
+#: includes/class-wc-ultimate-google-product-feed.php:139
 #@ wcugpf
 msgid "Category"
 msgstr "Categoria"
 
-#: wc-ultimate-google-product-feed.php:97
+#: includes/class-wc-ultimate-google-product-feed.php:140
 #@ wcugpf
 msgid "<a href=\"http://support.google.com/merchants/bin/answer.py?answer=1705911\" target=\"_blank\">Google's category of the item</a>"
 msgstr "<a href=\"http://support.google.com/merchants/bin/answer.py?answer=1705911\" target=\"_blank\">Google taxonomia de produto</a>"
 
-#: wc-ultimate-google-product-feed.php:104
+#: includes/class-wc-ultimate-google-product-feed.php:147
 #@ wcugpf
 msgid "Product Type"
 msgstr "Tipo de Produto"
 
-#: wc-ultimate-google-product-feed.php:105
+#: includes/class-wc-ultimate-google-product-feed.php:148
 #@ wcugpf
 msgid "Your category of the item"
 msgstr "Sua categoria para o item"
 
-#: wc-ultimate-google-product-feed.php:112
+#: includes/class-wc-ultimate-google-product-feed.php:155
 #@ wcugpf
 msgid "Condition"
 msgstr "Estado"
 
-#: wc-ultimate-google-product-feed.php:113
+#: includes/class-wc-ultimate-google-product-feed.php:156
 #@ wcugpf
 msgid "Condition or state of the item"
 msgstr "Condição ou estado do item"
 
-#: wc-ultimate-google-product-feed.php:124
-#: wc-ultimate-google-product-feed.php:129
+#: includes/class-wc-ultimate-google-product-feed.php:167
+#: includes/class-wc-ultimate-google-product-feed.php:172
 #@ wcugpf
 msgid "Availability"
 msgstr "Disponibilidade"
 
-#: wc-ultimate-google-product-feed.php:130
+#: includes/class-wc-ultimate-google-product-feed.php:173
 #@ wcugpf
 msgid "Availability status of the item"
 msgstr "Disponibilidade do item"
 
-#: wc-ultimate-google-product-feed.php:142
+#: includes/class-wc-ultimate-google-product-feed.php:185
 #@ wcugpf
 msgid "Unique Product Identifiers"
 msgstr "Identificadores exclusivos de produto"
 
-#: wc-ultimate-google-product-feed.php:147
-#: wc-ultimate-google-product-feed.php:194
-#: wc-ultimate-google-product-feed.php:241
-#: wc-ultimate-google-product-feed.php:320
+#: includes/class-wc-ultimate-google-product-feed.php:190
+#: includes/class-wc-ultimate-google-product-feed.php:237
+#: includes/class-wc-ultimate-google-product-feed.php:284
+#: includes/class-wc-ultimate-google-product-feed.php:363
 #@ wcugpf
 msgid "Include in Feed?"
 msgstr "Incluir no Feed?"
 
-#: wc-ultimate-google-product-feed.php:148
+#: includes/class-wc-ultimate-google-product-feed.php:191
 #@ wcugpf
 msgid "Enable this option to include \"Unique Product Identifiers\" in Google products Feed"
 msgstr "Ative esta opção para incluir \"Identificadores exclusivos de produto\" no Feed de produtos do Google"
 
-#: wc-ultimate-google-product-feed.php:159
+#: includes/class-wc-ultimate-google-product-feed.php:202
 #@ wcugpf
 msgid "Brand"
 msgstr "Marca"
 
-#: wc-ultimate-google-product-feed.php:160
+#: includes/class-wc-ultimate-google-product-feed.php:203
 #@ wcugpf
 msgid "Brand of the item"
 msgstr "Marca do itme"
 
-#: wc-ultimate-google-product-feed.php:169
+#: includes/class-wc-ultimate-google-product-feed.php:212
 #@ wcugpf
 msgid "GTIN"
 msgstr "EAN"
 
-#: wc-ultimate-google-product-feed.php:170
+#: includes/class-wc-ultimate-google-product-feed.php:213
 #@ wcugpf
 msgid "Global Trade Item Number (GTIN) of the item"
 msgstr "o número global de item comercial (EAN) do item"
 
-#: wc-ultimate-google-product-feed.php:179
+#: includes/class-wc-ultimate-google-product-feed.php:222
 #@ wcugpf
 msgid "MPN"
 msgstr "MPN"
 
-#: wc-ultimate-google-product-feed.php:180
+#: includes/class-wc-ultimate-google-product-feed.php:223
 #@ wcugpf
 msgid "Manufacturer Part Number (MPN) of the item"
 msgstr "O número da peça do fabricante (MPN) do item"
 
-#: wc-ultimate-google-product-feed.php:189
+#: includes/class-wc-ultimate-google-product-feed.php:232
 #@ wcugpf
 msgid "Tax & Shipping"
 msgstr "Taxas e frete"
 
-#: wc-ultimate-google-product-feed.php:195
+#: includes/class-wc-ultimate-google-product-feed.php:238
 #@ wcugpf
 msgid "Enable this option to include \"Tax & Shipping\" in Google products Feed"
 msgstr "Ative esta opção para incluir \"Taxas e frete\" no Feed de produtos do Google"
 
-#: wc-ultimate-google-product-feed.php:206
+#: includes/class-wc-ultimate-google-product-feed.php:249
 #@ wcugpf
 msgid "Tax"
 msgstr "Taxas"
 
-#: wc-ultimate-google-product-feed.php:207
+#: includes/class-wc-ultimate-google-product-feed.php:250
 #@ wcugpf
 msgid "This attribute is only available in the US. Example: <code>US:CA:8.25:y,US:926*:8.75:y</code>"
 msgstr "Este atributo só está disponível nos EUA. Exemplo: <code>US:CA:8.25:y,US:926*:8.75:y</code>"
 
-#: wc-ultimate-google-product-feed.php:216
+#: includes/class-wc-ultimate-google-product-feed.php:259
 #@ wcugpf
 msgid "Shipping"
 msgstr "Frete"
 
-#: wc-ultimate-google-product-feed.php:217
+#: includes/class-wc-ultimate-google-product-feed.php:260
 #@ wcugpf
 msgid "This attribute provides the specific shipping estimate for the product. Example: <code>US:024*:Ground:6.49 USD,US:MA:Express:13.12 USD</code>"
 msgstr "Este atributo deve conter o frete específico estimado para o produto. Exemplo: <code>US:024*:Ground:6.49 USD,US:MA:Express:13.12 USD</code>"
 
-#: wc-ultimate-google-product-feed.php:226
+#: includes/class-wc-ultimate-google-product-feed.php:269
 #@ wcugpf
 msgid "Shipping Weight"
 msgstr "Peso com Embalagem"
 
-#: wc-ultimate-google-product-feed.php:227
+#: includes/class-wc-ultimate-google-product-feed.php:270
 #@ wcugpf
 msgid "Weight of the item for shipping. Accept only the following units of weight: lb, oz, g, kg. Example: <code>3 kg</code>"
 msgstr "Peso do item para o transporte. Aceita apenas as seguintes unidades de peso: lb, oz, g, kg. Exemplo: <code>3 kg</code>"
 
-#: wc-ultimate-google-product-feed.php:236
+#: includes/class-wc-ultimate-google-product-feed.php:279
 #@ wcugpf
 msgid "Apparel Products"
 msgstr "Produtos de vestuário"
 
-#: wc-ultimate-google-product-feed.php:242
+#: includes/class-wc-ultimate-google-product-feed.php:285
 #@ wcugpf
 msgid "Enable this option to include \"Apparel Products\" in Google products Feed"
 msgstr "Ative esta opção para incluir \"Produtos de vestuário\" no Feed de produtos do Google"
 
-#: wc-ultimate-google-product-feed.php:253
+#: includes/class-wc-ultimate-google-product-feed.php:296
 #@ wcugpf
 msgid "Gender"
 msgstr "Gênero"
 
-#: wc-ultimate-google-product-feed.php:254
+#: includes/class-wc-ultimate-google-product-feed.php:297
 #@ wcugpf
 msgid "Gender of the item"
 msgstr "Gênero do item"
 
-#: wc-ultimate-google-product-feed.php:268
+#: includes/class-wc-ultimate-google-product-feed.php:311
 #@ wcugpf
 msgid "Age Group"
 msgstr "Idade"
 
-#: wc-ultimate-google-product-feed.php:269
+#: includes/class-wc-ultimate-google-product-feed.php:312
 #@ wcugpf
 msgid "Target age group of the item"
 msgstr "Idade-alvo do item"
 
-#: wc-ultimate-google-product-feed.php:272
+#: includes/class-wc-ultimate-google-product-feed.php:315
 #@ wcugpf
 msgid "adult"
 msgstr "adulto"
 
-#: wc-ultimate-google-product-feed.php:273
+#: includes/class-wc-ultimate-google-product-feed.php:316
 #@ wcugpf
 msgid "kids"
 msgstr "infantil"
 
-#: wc-ultimate-google-product-feed.php:282
+#: includes/class-wc-ultimate-google-product-feed.php:325
 #@ wcugpf
 msgid "Color"
 msgstr "Cor"
 
-#: wc-ultimate-google-product-feed.php:283
+#: includes/class-wc-ultimate-google-product-feed.php:326
 #@ wcugpf
 msgid "Color of the item"
 msgstr "Cor do item"
 
-#: wc-ultimate-google-product-feed.php:292
+#: includes/class-wc-ultimate-google-product-feed.php:335
 #@ wcugpf
 msgid "Size"
 msgstr "Tamanho"
 
-#: wc-ultimate-google-product-feed.php:293
+#: includes/class-wc-ultimate-google-product-feed.php:336
 #@ wcugpf
 msgid "Size of the item"
 msgstr "Tamanho do item"
 
-#: wc-ultimate-google-product-feed.php:301
+#: includes/class-wc-ultimate-google-product-feed.php:344
 #@ wcugpf
 msgid "Nearby Stores (USA and UK only)"
 msgstr "Lojas próximas (Somente nos EUA e Reino Unido)"
 
-#: wc-ultimate-google-product-feed.php:307
+#: includes/class-wc-ultimate-google-product-feed.php:350
 #@ wcugpf
 msgid "Online Only"
 msgstr "Somente Online"
 
-#: wc-ultimate-google-product-feed.php:308
+#: includes/class-wc-ultimate-google-product-feed.php:351
 #@ wcugpf
 msgid "Whether an item is available for purchase only online"
 msgstr "Se um item está disponível para compra somente online"
 
-#: wc-ultimate-google-product-feed.php:315
+#: includes/class-wc-ultimate-google-product-feed.php:358
 #@ wcugpf
 msgid "Multiple Installments (Brazil Only)"
 msgstr "Diversas parcelas (somente no Brasil)"
 
-#: wc-ultimate-google-product-feed.php:321
+#: includes/class-wc-ultimate-google-product-feed.php:364
 #@ wcugpf
 msgid "Enable this option to include \"Installments\" in Google products Feed"
 msgstr "Ative esta opção para incluir \"Diversas parcelas\" no Feed de produtos do Google"
 
-#: wc-ultimate-google-product-feed.php:332
+#: includes/class-wc-ultimate-google-product-feed.php:375
 #@ wcugpf
 msgid "Number"
 msgstr "Número"
 
-#: wc-ultimate-google-product-feed.php:333
+#: includes/class-wc-ultimate-google-product-feed.php:376
 #@ wcugpf
 msgid "Number of installments to pay for an item"
 msgstr "Número de parcelas a pagar pelo item"
 
-#: wc-ultimate-google-product-feed.php:340
+#: includes/class-wc-ultimate-google-product-feed.php:383
 #@ wcugpf
 msgid "Amount"
 msgstr "Valor"
 
-#: wc-ultimate-google-product-feed.php:341
+#: includes/class-wc-ultimate-google-product-feed.php:384
 #@ wcugpf
 msgid "Amount of installments to pay for an item"
 msgstr "Valor das parcelas a pagar por um item"
 
-#: wc-ultimate-google-product-feed.php:349
+#: includes/class-wc-ultimate-google-product-feed.php:392
 #@ wcugpf
 msgid "Additional Attributes"
 msgstr "Atributos adicionais"
 
-#: wc-ultimate-google-product-feed.php:355
+#: includes/class-wc-ultimate-google-product-feed.php:398
 #@ wcugpf
 msgid "Product Search"
 msgstr "Google Shopping"
 
-#: wc-ultimate-google-product-feed.php:356
+#: includes/class-wc-ultimate-google-product-feed.php:399
 #@ wcugpf
 msgid "Excluded Destinations in Product Search"
 msgstr "Excluir do Google Shopping"
 
-#: wc-ultimate-google-product-feed.php:363
+#: includes/class-wc-ultimate-google-product-feed.php:406
 #@ wcugpf
 msgid "Product Ads"
 msgstr "Anúncios de Produtos"
 
-#: wc-ultimate-google-product-feed.php:364
+#: includes/class-wc-ultimate-google-product-feed.php:407
 #@ wcugpf
 msgid "Excluded Destinations in Product Ads"
 msgstr "Excluir do Anúncios de Produtos"
 
-#: wc-ultimate-google-product-feed.php:371
+#: includes/class-wc-ultimate-google-product-feed.php:414
 #@ wcugpf
 msgid "Commerce Search"
 msgstr "Google Commerce Search"
 
-#: wc-ultimate-google-product-feed.php:372
+#: includes/class-wc-ultimate-google-product-feed.php:415
 #@ wcugpf
 msgid "Excluded Destinations in Commerce Search"
 msgstr "Excluir do Google Commerce Search"
 
-#: wc-ultimate-google-product-feed.php:381
+#: includes/class-wc-ultimate-google-product-feed.php:424
 #@ wcugpf
 msgid "Expiration Date"
 msgstr "Data de Expiração"
 
-#: wc-ultimate-google-product-feed.php:382
+#: includes/class-wc-ultimate-google-product-feed.php:425
 #@ wcugpf
 msgid "Date that an item will expire. Format type like a <code>YYYY-MM-DD</code>"
 msgstr "Data em que o item expira. Formato de data como <code>YYYY-MM-DD</code>"
 
-#: wc-ultimate-google-product-feed.php:426
+#: includes/class-wc-ultimate-google-product-feed.php:16
+#: wc-ultimate-google-product-feed.php:92
 #@ wcugpf
 msgid "Google Product Feed"
 msgstr "Feed de Produtos do Google"
 
-#: wc-ultimate-google-product-feed.php:77
+#: includes/class-wc-ultimate-google-product-feed.php:120
 #@ wcugpf
 msgid "You need help completing these options? Check this:"
 msgstr "Você precisa de ajuda para completar estas opções? Acesse:"
+
+#: includes/class-wc-ultimate-google-product-feed.php:24
+#: uninstall.php:10
+#: wc-ultimate-google-product-feed.php:88
+#@ wcugpf
+msgid "product-feed"
+msgstr "product-feed"
+
+#: includes/class-wc-ultimate-google-product-feed.php:56
+#@ wcugpf
+msgid "Number of items in the feed"
+msgstr "Número de itens do feed"
+
+#: includes/class-wc-ultimate-google-product-feed.php:58
+#@ wcugpf
+msgid "Total number of items that will be displayed in the feed"
+msgstr "Número total de itens que serão exibidos no feed"
+
+#: includes/class-wc-ultimate-google-product-feed.php:63
+#@ wcugpf
+msgid "Default Options"
+msgstr "Opções Padrão"
+
+#: includes/class-wc-ultimate-google-product-feed.php:65
+#, php-format
+#@ wcugpf
+msgid "You need help completing these options? Check the %s."
+msgstr "Você precisa de ajuda para preencher estas opções? Acesse %s."
+
+#: includes/class-wc-ultimate-google-product-feed.php:68
+#@ wcugpf
+msgid "Default Category"
+msgstr "Categoria Padrão"
+
+#: includes/class-wc-ultimate-google-product-feed.php:73
+#@ wcugpf
+msgid "Default Product Type"
+msgstr "Tipo de Produto Padrão"
+
+#. translators: plugin header field 'PluginURI'
+#: wc-ultimate-google-product-feed.php:0
+#@ wcugpf
+msgid "https://github.com/claudiosmweb/woocommerce-ultimate-google-product-feed"
+msgstr "https://github.com/claudiosmweb/woocommerce-ultimate-google-product-feed"
+
+#. translators: plugin header field 'Version'
+#: wc-ultimate-google-product-feed.php:0
+#@ wcugpf
+msgid "1.0.0"
+msgstr "1.0.0"
+
+#: wc-ultimate-google-product-feed.php:21
+#, php-format
+#@ wcugpf
+msgid "WooCommerce Ultimate Google Product Feed depends on the last version of %s to work!"
+msgstr "WooCommerce Ultimate Google Product Feed depende da última versão do %s para funcionar!"
+
+#: wc-ultimate-google-product-feed.php:21
+#@ wcugpf
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: wc-ultimate-google-product-feed.php:75
+#@ wcugpf
+msgid "Settings"
+msgstr "Configurações"
+
+#. translators: plugin header field 'Description'
+#: includes/class-wc-ultimate-google-product-feed.php:17
+#: wc-ultimate-google-product-feed.php:0
+#@ wcugpf
+msgid "Creates a Feed to integrate with your Google Merchant Center."
+msgstr "Cria um feed para se integrar com o seu Google Merchant Center."
+
+#: includes/class-wc-ultimate-google-product-feed.php:96
+#@ wcugpf
+msgid "Google Merchant"
+msgstr "Google Merchant"
+
+#: includes/class-wc-ultimate-google-product-feed.php:115
+#@ wcugpf
+msgid "Enable this option to include in this product in your Product Feed"
+msgstr "Ativa esta opção para incluir este produto no seu Feed de Produtos."
 
