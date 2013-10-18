@@ -13,7 +13,7 @@ Creates a Feed to integrate with your Google Merchant Center.
 == Description ==
 
 This plugin is able to generate a feed to be integrated with the [Google Merchant Center](http://www.google.com/merchants/).
-Thus you need to have an account in Google Merchant Center to use this plguin.
+Thus you need to have an account in Google Merchant Center to use this plugin.
 
 Installing it is to create a page with your feed address like this:
 
