@@ -73,17 +73,21 @@ module.exports = function(grunt) {
 
         // rsync commands used to take the files to svn repository
         rsync: {
-            tag: {
+            options: {
                 src: "./",
-                dest: "<%= svn_settings.tag %>",
-                recursive: true,
-                exclude: "<%= svn_settings.exclude %>"
+                args: ["--verbose"],
+                exclude: "<%= svn_settings.exclude %>",
+                recursive: true
+            },
+            tag: {
+                options: {
+                    dest: "<%= svn_settings.tag %>"
+                }
             },
             trunk: {
-                src: "./",
-                dest: "<%= svn_settings.trunk %>",
-                recursive: true,
-                exclude: "<%= svn_settings.exclude %>"
+                options: {
+                    dest: "<%= svn_settings.trunk %>"
+                }
             }
         },
 
@@ -148,7 +152,7 @@ module.exports = function(grunt) {
 
     // deploy task
     grunt.registerTask("default", [
-        "default",
+        "compile",
         "rsync:tag",
         "rsync:trunk",
         "shell:svn_add",
