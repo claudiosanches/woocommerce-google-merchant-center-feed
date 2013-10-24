@@ -1,7 +1,7 @@
 === WooCommerce Google Merchant Center Feed ===
 Contributors: claudiosanches
 Donate link: http://claudiosmweb.com/doacoes/
-Tags: google merch
+Tags: google, merchant, woocommerce, product feed
 Requires at least: 3.5
 Tested up to: 3.6.1
 Stable tag: 1.0.0
