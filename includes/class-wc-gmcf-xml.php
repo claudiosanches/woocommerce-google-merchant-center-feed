@@ -2,7 +2,7 @@
 /**
  * Google Product Feed XML.
  *
- * @since 1.0.0
+ * @since 1.0.1
  */
 class WC_GMCF_XML {
 

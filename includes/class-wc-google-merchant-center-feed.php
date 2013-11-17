@@ -2,7 +2,7 @@
 /**
  * Ultimate Google Product Feed class.
  *
- * @since 1.0.0
+ * @since 1.0.1
  */
 class WC_Google_Merchant_Center_Feed extends WC_Integration {
 
