@@ -166,7 +166,6 @@ class WC_GMCF_XML {
 
             // Gets the product data.
             $product = get_product( get_the_ID() );
-            // echo '<pre>' . print_r( $product->get_price(), true ) . '</pre>';
 
             $item = $channel->addChild( 'item' );
             $options = get_post_meta( get_the_ID(), 'wc_gmcf', true );
