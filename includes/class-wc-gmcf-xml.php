@@ -163,12 +163,12 @@ class WC_GMCF_XML {
         while ( $feed_query->have_posts() ) {
             $feed_query->the_post();
 
+            // Gets the product data.
+            $product = get_product( get_the_ID() );
+            // echo '<pre>' . print_r( $product->get_price(), true ) . '</pre>';
+
             $item = $channel->addChild( 'item' );
             $options = get_post_meta( get_the_ID(), 'wc_gmcf', true );
-            $regular_price = get_post_meta( get_the_ID(), '_regular_price', true );
-            $sale_price = get_post_meta( get_the_ID(), '_sale_price', true );
-            $sale_price_dates_from = get_post_meta( get_the_ID(), '_sale_price_dates_from', true );
-            $sale_price_dates_to = get_post_meta( get_the_ID(), '_sale_price_dates_to', true );
 
             // Basic Product Information.
             $item->addChild( 'g:id', get_the_ID(), $ns );
@@ -188,12 +188,25 @@ class WC_GMCF_XML {
 
             // Availability and Price.
             $item->addChild( 'g:availability', $this->fix_availability( $options['condition'] ), $ns );
-            $item->addChild( 'g:price', $regular_price . ' ' . $currency, $ns );
-            if ( ! empty ( $sale_price ) ) {
-                $item->addChild( 'g:sale_price', $sale_price . ' ' . $currency, $ns );
 
-                if ( ! empty( $sale_price_dates_from ) && ! empty( $sale_price_dates_to )  )
-                    $item->addChild( 'g:sale_price_effective_date', $this->fix_date( $sale_price_dates_from, $sale_price_dates_to ) , $ns );
+            if ( $product->is_type( 'variable' ) ) {
+                if ( $product->is_on_sale() ) {
+                    $item->addChild( 'g:price', $product->min_variation_regular_price . ' ' . $currency, $ns );
+                    $item->addChild( 'g:sale_price', $product->min_variation_price . ' ' . $currency, $ns );
+                } else {
+                    $item->addChild( 'g:price', $product->get_price() . ' ' . $currency, $ns );
+                }
+            } else {
+                if ( $product->is_on_sale() ) {
+                    $item->addChild( 'g:price', $product->regular_price . ' ' . $currency, $ns );
+                    $item->addChild( 'g:sale_price', $product->sale_price . ' ' . $currency, $ns );
+
+                    if ( ! empty( $product->sale_price_dates_from ) && ! empty( $product->sale_price_dates_to ) ) {
+                        $item->addChild( 'g:sale_price_effective_date', $this->fix_date( $product->sale_price_dates_from, $product->sale_price_dates_to ) , $ns );
+                    }
+                } else {
+                    $item->addChild( 'g:price', $product->get_price() . ' ' . $currency, $ns );
+                }
             }
 
             // Unique Product Identifiers.
