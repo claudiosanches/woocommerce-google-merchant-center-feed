@@ -9,5 +9,6 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) || ! WP_UNINSTALL_PLUGIN || dirname( WP_
 // Delete feed page.
 $feed_slug = sanitize_title( _x( 'product-feed', 'page slug', 'wcgmcf' ) );
 $feed_page = get_page_by_path( $feed_slug );
-if ( $feed_page )
+if ( $feed_page ) {
     wp_delete_post( $feed_page->ID, true );
+}

@@ -104,8 +104,9 @@ class WC_GMCF_XML {
 
         $values = explode( ',', $values );
 
-        foreach ( $values as $value )
+        foreach ( $values as $value ) {
             $tax[] = explode( ':', $value );
+        }
 
         return $tax;
     }
@@ -222,14 +223,18 @@ class WC_GMCF_XML {
                 if ( ! empty( $options['tax'] ) ) {
                     foreach ( $this->build_tax( $options['tax'] ) as $value ) {
                         $tax = $item->addChild( 'g:tax', '', $ns );
-                        if ( ! empty( $value[0] ) )
+                        if ( ! empty( $value[0] ) ) {
                             $tax->addChild( 'g:country', $value[0], $ns );
-                        if ( ! empty( $value[1] ) )
+                        }
+                        if ( ! empty( $value[1] ) ) {
                             $tax->addChild( 'g:region', $value[1], $ns );
-                        if ( ! empty( $value[2] ) )
+                        }
+                        if ( ! empty( $value[2] ) ) {
                             $tax->addChild( 'g:rate', $value[2], $ns );
-                        if ( ! empty( $value[3] ) )
+                        }
+                        if ( ! empty( $value[3] ) ) {
                             $tax->addChild( 'g:tax_ship', $value[3], $ns );
+                        }
                     }
                 }
 
@@ -237,20 +242,25 @@ class WC_GMCF_XML {
                 if ( ! empty( $options['shipping'] ) ) {
                     foreach ( $this->build_tax( $options['shipping'] ) as $value ) {
                         $shipping = $item->addChild( 'g:shipping', '', $ns );
-                        if ( ! empty( $value[0] ) )
+                        if ( ! empty( $value[0] ) ) {
                             $shipping->addChild( 'g:country', $value[0], $ns );
-                        if ( ! empty( $value[1] ) )
+                        }
+                        if ( ! empty( $value[1] ) ) {
                             $shipping->addChild( 'g:region', $value[1], $ns );
-                        if ( ! empty( $value[2] ) )
+                        }
+                        if ( ! empty( $value[2] ) ) {
                             $shipping->addChild( 'g:service', $value[2], $ns );
-                        if ( ! empty( $value[3] ) )
+                        }
+                        if ( ! empty( $value[3] ) ) {
                             $shipping->addChild( 'g:price', $value[3], $ns );
+                        }
                     }
                 }
 
                 // Shipping Weight.
-                if ( ! empty( $options['shipping_weight'] ) )
+                if ( ! empty( $options['shipping_weight'] ) ) {
                     $item->addChild( 'g:shipping_weight', $options['shipping_weight'], $ns );
+                }
             }
 
             // Apparel Products.
@@ -262,8 +272,9 @@ class WC_GMCF_XML {
             }
 
             // Nearby Stores.
-            if ( isset( $options['online_only'] ) )
+            if ( isset( $options['online_only'] ) ) {
                 $item->addChild( 'g:online_only', 'y', $ns );
+            }
 
             // Multiple Installments.
             if ( isset( $options['active_installments'] ) ) {
@@ -273,17 +284,21 @@ class WC_GMCF_XML {
             }
 
             // Additional Attributes.
-            if ( isset( $options['excluded_destination_ps'] ) )
+            if ( isset( $options['excluded_destination_ps'] ) ) {
                 $item->addChild( 'g:excluded_destination', 'Product Search', $ns );
+            }
 
-            if ( isset( $options['excluded_destination_pa'] ) )
+            if ( isset( $options['excluded_destination_pa'] ) ) {
                 $item->addChild( 'g:excluded_destination', 'Product Ads', $ns );
+            }
 
-            if ( isset( $options['excluded_destination_cs'] ) )
+            if ( isset( $options['excluded_destination_cs'] ) ) {
                 $item->addChild( 'g:excluded_destination', 'Commerce Search', $ns );
+            }
 
-            if ( ! empty( $options['expiration_date'] ) )
+            if ( ! empty( $options['expiration_date'] ) ) {
                 $item->addChild( 'g:expiration_date', $options['expiration_date'], $ns );
+            }
 
         }
 

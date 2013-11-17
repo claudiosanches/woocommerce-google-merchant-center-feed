@@ -85,8 +85,9 @@ class WC_Google_Merchant_Center_Feed extends WC_Integration {
     public function scripts() {
         $screen = get_current_screen();
 
-        if ( 'product' === $screen->id )
+        if ( 'product' === $screen->id ) {
             wp_enqueue_script( 'wc-gmcf-metabox', WOO_GMCF_URL . '/assets/js/jquery.wc-gmcf.min.js', array( 'jquery' ), null, true );
+        }
     }
 
     /**
@@ -440,11 +441,13 @@ class WC_Google_Merchant_Center_Feed extends WC_Integration {
      * @return void
      */
     function save_tab_options( $post_id ) {
-        if ( isset( $_POST['wc_gmcf_active'] ) )
+        if ( isset( $_POST['wc_gmcf_active'] ) ) {
             update_post_meta( $post_id, 'wc_gmcf_active', $_POST['wc_gmcf_active'] );
+        }
 
-        if ( isset( $_POST['wc_gmcf'] ) )
+        if ( isset( $_POST['wc_gmcf'] ) ) {
             update_post_meta( $post_id, 'wc_gmcf', $_POST['wc_gmcf'] );
+        }
     }
 
     /**
@@ -455,8 +458,9 @@ class WC_Google_Merchant_Center_Feed extends WC_Integration {
      * @return string               Feed template file path.
      */
     public function feed_template( $page_template ) {
-        if ( is_page( $this->page ) )
+        if ( is_page( $this->page ) ) {
             $page_template = WOO_GMCF_PATH . 'templates/feed.php';
+        }
 
         return $page_template;
     }
