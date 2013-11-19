@@ -187,7 +187,7 @@ class WC_GMCF_XML {
             $item->addChild( 'g:condition', $this->fix_condition( $options['condition'] ), $ns );
 
             // Availability and Price.
-            $item->addChild( 'g:availability', $this->fix_availability( $options['condition'] ), $ns );
+            $item->addChild( 'g:availability', $this->fix_availability( $options['availability'] ), $ns );
 
             if ( $product->is_type( 'variable' ) ) {
                 if ( $product->is_on_sale() ) {

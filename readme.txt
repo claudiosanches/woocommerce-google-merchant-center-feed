@@ -4,7 +4,7 @@ Donate link: http://claudiosmweb.com/doacoes/
 Tags: google, merchant, woocommerce, product feed
 Requires at least: 3.5
 Tested up to: 3.7.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,10 @@ The feed address is like this:
 
 == Changelog ==
 
+= 1.0.2 - 16/11/2013 =
+
+* Fixed the `availability` item in product XML.
+
 = 1.0.1 - 16/11/2013 =
 
 * Fixed price for variable products.
@@ -75,9 +79,9 @@ The feed address is like this:
 
 == Upgrade Notice ==
 
-= 1.0.1 =
+= 1.0.2 =
 
-* Fixed price for variable products.
+* Fixed the `availability` item in product XML.
 
 == License ==
 
