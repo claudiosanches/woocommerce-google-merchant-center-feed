@@ -4,7 +4,7 @@
 **Tags:** google, merchant, woocommerce, product feed  
 **Requires at least:** 3.5  
 **Tested up to:** 3.7.1  
-**Stable tag:** 1.0.2  
+**Stable tag:** 1.0.3  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -69,7 +69,11 @@ The feed address is like this:
 
 ## Changelog ##
 
-### 1.0.2 - 16/11/2013 ###
+### 1.0.3 - 19/11/2013 ###
+
+* Fixed the activation and deactivation of the product in the feed.
+
+### 1.0.2 - 18/11/2013 ###
 
 * Fixed the `availability` item in product XML.
 
@@ -83,9 +87,9 @@ The feed address is like this:
 
 ## Upgrade Notice ##
 
-### 1.0.2 ###
+### 1.0.3 ###
 
-* Fixed the `availability` item in product XML.
+* Fixed the activation and deactivation of the product in the feed.
 
 ## License ##
 

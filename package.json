@@ -1,7 +1,7 @@
 {
   "name": "woocommerce-google-merchant-center-feed",
   "description": "Creates a Feed to integrate with your Google Merchant Center",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "Gruntfile.js",
   "devDependencies": {
     "grunt": "~0.4.1",

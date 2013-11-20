@@ -2,7 +2,7 @@
 /**
  * Ultimate Google Product Feed class.
  *
- * @since 1.0.1
+ * @since 1.0.3
  */
 class WC_Google_Merchant_Center_Feed extends WC_Integration {
 
@@ -443,6 +443,8 @@ class WC_Google_Merchant_Center_Feed extends WC_Integration {
     function save_tab_options( $post_id ) {
         if ( isset( $_POST['wc_gmcf_active'] ) ) {
             update_post_meta( $post_id, 'wc_gmcf_active', $_POST['wc_gmcf_active'] );
+        } else {
+            delete_post_meta( $post_id, 'wc_gmcf_active' );
         }
 
         if ( isset( $_POST['wc_gmcf'] ) ) {
