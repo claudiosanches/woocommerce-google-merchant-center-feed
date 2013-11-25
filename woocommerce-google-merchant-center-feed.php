@@ -5,7 +5,7 @@
  * Description: Creates a Feed to integrate with your Google Merchant Center.
  * Author: claudiosanches
  * Author URI: http://claudiosmweb.com/
- * Version: 1.0.3
+ * Version: 1.0.4
  * License: GPLv2 or later
  * Text Domain: wcgmcf
  * Domain Path: /languages/

@@ -4,7 +4,7 @@
 **Tags:** google, merchant, woocommerce, product feed  
 **Requires at least:** 3.5  
 **Tested up to:** 3.7.1  
-**Stable tag:** 1.0.3  
+**Stable tag:** 1.0.4  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -68,6 +68,11 @@ The feed address is like this:
 
 
 ## Changelog ##
+
+### 1.0.4 - 25/11/2013 ###
+
+* Added Serbo-Croatian translate by (Borisa).
+* Added .pot file.
 
 ### 1.0.3 - 19/11/2013 ###
 
