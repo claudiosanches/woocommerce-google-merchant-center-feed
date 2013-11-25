@@ -1,0 +1,399 @@
+# Copyright (C) 2013 WooCommerce Google Merchant Center Feed
+# This file is distributed under the same license as the WooCommerce Google Merchant Center Feed package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Google Merchant Center Feed 1.0.3\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/woocommerce-google-"
+"merchant-center-feed\n"
+"POT-Creation-Date: 2013-11-25 19:36:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/class-wc-google-merchant-center-feed.php:16
+msgid "Google Merchant Center"
+msgstr ""
+
+#. #-#-#-#-#  wcgmcf.pot (WooCommerce Google Merchant Center Feed 1.0.3)  #-#-#-#-#
+#. Description of the plugin/theme
+#: includes/class-wc-google-merchant-center-feed.php:17
+msgid "Creates a Feed to integrate with your Google Merchant Center."
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:24 uninstall.php:10
+#: woocommerce-google-merchant-center-feed.php:88
+msgctxt "page slug"
+msgid "product-feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:56
+msgid "Number of items in the feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:58
+msgid "Total number of items that will be displayed in the feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:63
+msgid "Default Options"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:65
+msgid "You need help completing these options? Check the %s."
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:65
+#: includes/class-wc-google-merchant-center-feed.php:121
+msgid "Products Feed Specification"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:68
+msgid "Default Category"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:73
+msgid "Default Product Type"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:97
+msgid "Google Merchant"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:115
+msgid "Include in Product Feed?"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:116
+msgid "Enable this option to include in this product in your Product Feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:121
+msgid "You need help completing these options? Check this:"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:125
+msgid "Basic Product Information"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:131
+msgid "Description"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:132
+msgid "Description of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:140
+msgid "Category"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:141
+msgid ""
+"<a href=\"http://support.google.com/merchants/bin/answer.py?answer=1705911\" "
+"target=\"_blank\">Google's category of the item</a>"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:148
+msgid "Product Type"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:149
+msgid "Your category of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:156
+msgid "Condition"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:157
+msgid "Condition or state of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:160
+msgid "new"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:161
+msgid "used"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:162
+msgid "refurbished"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:168
+#: includes/class-wc-google-merchant-center-feed.php:173
+msgid "Availability"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:174
+msgid "Availability status of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:177
+msgid "in stock"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:178
+msgid "available for order"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:179
+msgid "out of stock"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:180
+msgid "preorder"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:186
+msgid "Unique Product Identifiers"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:191
+#: includes/class-wc-google-merchant-center-feed.php:238
+#: includes/class-wc-google-merchant-center-feed.php:285
+#: includes/class-wc-google-merchant-center-feed.php:364
+msgid "Include in Feed?"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:192
+msgid ""
+"Enable this option to include \"Unique Product Identifiers\" in Google "
+"products Feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:203
+msgid "Brand"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:204
+msgid "Brand of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:213
+msgid "GTIN"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:214
+msgid "Global Trade Item Number (GTIN) of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:223
+msgid "MPN"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:224
+msgid "Manufacturer Part Number (MPN) of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:233
+msgid "Tax & Shipping"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:239
+msgid ""
+"Enable this option to include \"Tax & Shipping\" in Google products Feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:250
+msgid "Tax"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:251
+msgid ""
+"This attribute is only available in the US. Example: <code>US:CA:8.25:y,"
+"US:926*:8.75:y</code>"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:260
+msgid "Shipping"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:261
+msgid ""
+"This attribute provides the specific shipping estimate for the product. "
+"Example: <code>US:024*:Ground:6.49 USD,US:MA:Express:13.12 USD</code>"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:270
+msgid "Shipping Weight"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:271
+msgid ""
+"Weight of the item for shipping. Accept only the following units of weight: "
+"lb, oz, g, kg. Example: <code>3 kg</code>"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:280
+msgid "Apparel Products"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:286
+msgid ""
+"Enable this option to include \"Apparel Products\" in Google products Feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:297
+msgid "Gender"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:298
+msgid "Gender of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:301
+msgid "male"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:302
+msgid "female"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:303
+msgid "unisex"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:312
+msgid "Age Group"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:313
+msgid "Target age group of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:316
+msgid "adult"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:317
+msgid "kids"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:326
+msgid "Color"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:327
+msgid "Color of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:336
+msgid "Size"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:337
+msgid "Size of the item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:345
+msgid "Nearby Stores (USA and UK only)"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:351
+msgid "Online Only"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:352
+msgid "Whether an item is available for purchase only online"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:359
+msgid "Multiple Installments (Brazil Only)"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:365
+msgid "Enable this option to include \"Installments\" in Google products Feed"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:376
+msgid "Number"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:377
+msgid "Number of installments to pay for an item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:384
+msgid "Amount"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:385
+msgid "Amount of installments to pay for an item"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:393
+msgid "Additional Attributes"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:399
+msgid "Product Search"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:400
+msgid "Excluded Destinations in Product Search"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:407
+msgid "Product Ads"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:408
+msgid "Excluded Destinations in Product Ads"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:415
+msgid "Commerce Search"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:416
+msgid "Excluded Destinations in Commerce Search"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:425
+msgid "Expiration Date"
+msgstr ""
+
+#: includes/class-wc-google-merchant-center-feed.php:426
+msgid ""
+"Date that an item will expire. Format type like a <code>YYYY-MM-DD</code>"
+msgstr ""
+
+#: woocommerce-google-merchant-center-feed.php:21
+msgid ""
+"WooCommerce Ultimate Google Product Feed depends on the last version of %s "
+"to work!"
+msgstr ""
+
+#: woocommerce-google-merchant-center-feed.php:21
+msgid "WooCommerce"
+msgstr ""
+
+#: woocommerce-google-merchant-center-feed.php:75
+msgid "Settings"
+msgstr ""
+
+#: woocommerce-google-merchant-center-feed.php:92
+msgctxt "page name"
+msgid "Product Feed"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Google Merchant Center Feed"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/claudiosmweb/woocommerce-google-merchant-center-feed"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "claudiosanches"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://claudiosmweb.com/"
+msgstr ""
