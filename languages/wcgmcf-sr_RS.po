@@ -1,0 +1,524 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Google Merchant Center Feed v1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-11-12 13:31+0100\n"
+"Last-Translator: Borisa Djuraskovic <borisad@webhostinghub.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: pt_BR\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:160
+msgid "used"
+msgstr "korišćeno"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:161
+msgid "refurbished"
+msgstr "renovirano"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:159
+msgid "new"
+msgstr "novo"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:177
+msgid "available for order"
+msgstr "dostupno po porudžbini"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:178
+msgid "out of stock"
+msgstr "nema u lageru"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:179
+msgid "preorder"
+msgstr "rezervisati"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:176
+msgid "in stock"
+msgstr "na lageru"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:301
+msgid "female"
+msgstr "žensko"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:302
+msgid "unisex"
+msgstr "unisex"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:300
+msgid "male"
+msgstr "muško"
+
+# @ wcgmcf
+#. translators: plugin header field 'AuthorURI'
+#: woocommerce-google-merchant-center-feed.php:0
+msgid "http://claudiosmweb.com/"
+msgstr "http://claudiosmweb.com/"
+
+# @ wcgmcf
+#. translators: plugin header field 'Author'
+#: woocommerce-google-merchant-center-feed.php:0
+msgid "claudiosanches"
+msgstr "claudiosanches"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:114
+msgid "Include in Product Feed?"
+msgstr "Uključiti u Feed proizvoda?"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:65
+#: includes/class-wc-google-merchant-center-feed.php:120
+msgid "Products Feed Specification"
+msgstr "Specifikacija feed-a proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:124
+msgid "Basic Product Information"
+msgstr "Osnovne informacije o proizvodu"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:130
+msgid "Description"
+msgstr "Opis"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:131
+msgid "Description of the item"
+msgstr "Opis stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:139
+msgid "Category"
+msgstr "Kategorija"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:140
+msgid ""
+"<a href=\"http://support.google.com/merchants/bin/answer.py?answer=1705911\" "
+"target=\"_blank\">Google's category of the item</a>"
+msgstr ""
+"<a href=\"http://support.google.com/merchants/bin/answer.py?answer=1705911\" "
+"target=\"_blank\">Google kategorija stavke</a>"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:147
+msgid "Product Type"
+msgstr "Tip proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:148
+msgid "Your category of the item"
+msgstr "Vaša kategorija stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:155
+msgid "Condition"
+msgstr "Stanje"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:156
+msgid "Condition or state of the item"
+msgstr "Stanje stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:167
+#: includes/class-wc-google-merchant-center-feed.php:172
+msgid "Availability"
+msgstr "Dostupnost"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:173
+msgid "Availability status of the item"
+msgstr "Dostupnost statusa stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:185
+msgid "Unique Product Identifiers"
+msgstr "Jedinstveni identifikatori proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:190
+#: includes/class-wc-google-merchant-center-feed.php:237
+#: includes/class-wc-google-merchant-center-feed.php:284
+#: includes/class-wc-google-merchant-center-feed.php:363
+msgid "Include in Feed?"
+msgstr "Uključiti u feed?"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:191
+msgid ""
+"Enable this option to include \"Unique Product Identifiers\" in Google "
+"products Feed"
+msgstr ""
+"Omogući ovu opciju da bi uključila \"Jedinstvene identifikatore proizvoda\" "
+"u Google feedu proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:202
+msgid "Brand"
+msgstr "Brand"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:203
+msgid "Brand of the item"
+msgstr "Brend stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:212
+msgid "GTIN"
+msgstr "GTIN"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:213
+msgid "Global Trade Item Number (GTIN) of the item"
+msgstr "Globalni trgovinski broj (GTIN) stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:222
+msgid "MPN"
+msgstr "MPN"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:223
+msgid "Manufacturer Part Number (MPN) of the item"
+msgstr "Broj proizvodjača (MPN) stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:232
+msgid "Tax & Shipping"
+msgstr "Taksa i naplata slanja"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:238
+msgid ""
+"Enable this option to include \"Tax & Shipping\" in Google products Feed"
+msgstr ""
+"Omogući ovu opciju da bi uključila \"Taksa i naplata slanja\" u Google feedu "
+"proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:249
+msgid "Tax"
+msgstr "Taksa"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:250
+msgid ""
+"This attribute is only available in the US. Example: <code>US:CA:8.25:y,"
+"US:926*:8.75:y</code>"
+msgstr ""
+"Ovaj atribut je dostupan samo u US. Primer:<code>US:CA:8.25:y,US:926*:8.75:"
+"y</code>"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:259
+msgid "Shipping"
+msgstr "Naplata slanja"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:260
+msgid ""
+"This attribute provides the specific shipping estimate for the product. "
+"Example: <code>US:024*:Ground:6.49 USD,US:MA:Express:13.12 USD</code>"
+msgstr ""
+"Ovaj atribut omogućava procenu odredjene naplate slanja<code>US:024*:"
+"Ground:6.49 USD,US:MA:Express:13.12 USD</code>"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:269
+msgid "Shipping Weight"
+msgstr "Težina pošiljke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:270
+msgid ""
+"Weight of the item for shipping. Accept only the following units of weight: "
+"lb, oz, g, kg. Example: <code>3 kg</code>"
+msgstr ""
+"Težina stavke za slanje. Prihvataju se samo sledeće jedinice težine:b, oz, "
+"g, kg. Primer: <code>3 kg</code>"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:279
+msgid "Apparel Products"
+msgstr "Izgled proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:285
+msgid ""
+"Enable this option to include \"Apparel Products\" in Google products Feed"
+msgstr ""
+"Omogući ovu opciju da bi uključila \"Izgled proizvoda\" u Google feed "
+"proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:296
+msgid "Gender"
+msgstr "Pol"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:297
+msgid "Gender of the item"
+msgstr "Pol stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:311
+msgid "Age Group"
+msgstr "Grupa sa godinama"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:312
+msgid "Target age group of the item"
+msgstr "Ciljana grupa godina stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:315
+msgid "adult"
+msgstr "odrasli"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:316
+msgid "kids"
+msgstr "deca"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:325
+msgid "Color"
+msgstr "boja"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:326
+msgid "Color of the item"
+msgstr "Boja stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:335
+msgid "Size"
+msgstr "Veličina"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:336
+msgid "Size of the item"
+msgstr "Veličina tavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:344
+msgid "Nearby Stores (USA and UK only)"
+msgstr "Prodavnice u blizini  (samo USA i UK)"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:350
+msgid "Online Only"
+msgstr "Samo online"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:351
+msgid "Whether an item is available for purchase only online"
+msgstr "Da li je stavka dostupna za kupovinu samo online putem"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:358
+msgid "Multiple Installments (Brazil Only)"
+msgstr "Na više rata (samo Brazil )"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:364
+msgid "Enable this option to include \"Installments\" in Google products Feed"
+msgstr "Omogući ovu opciju da bi uključila \"Rate\" u Google feed proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:375
+msgid "Number"
+msgstr "Broj"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:376
+msgid "Number of installments to pay for an item"
+msgstr "Broj rata za plaćanje stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:383
+msgid "Amount"
+msgstr "Iznos"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:384
+msgid "Amount of installments to pay for an item"
+msgstr "Količina rata za plaćanje stavke"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:392
+msgid "Additional Attributes"
+msgstr "Dodatni atributi"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:398
+msgid "Product Search"
+msgstr "Pretraga proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:399
+msgid "Excluded Destinations in Product Search"
+msgstr "Isključene destinacije u pretrazi proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:406
+msgid "Product Ads"
+msgstr "Reklame proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:407
+msgid "Excluded Destinations in Product Ads"
+msgstr "Isključene destinacije u reklamama proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:414
+msgid "Commerce Search"
+msgstr "Pretraga trgovine "
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:415
+msgid "Excluded Destinations in Commerce Search"
+msgstr "Isključene destinacije u pretrazi trgovine"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:424
+msgid "Expiration Date"
+msgstr "Rok isteka"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:425
+msgid ""
+"Date that an item will expire. Format type like a <code>YYYY-MM-DD</code>"
+msgstr "Datum do kog stavka ističe. Tip formata kao<code>YYYY-MM-DD</code>"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:120
+msgid "You need help completing these options? Check this:"
+msgstr "Treba vam pomoć prilikom popunjavanja ovih opcija? Pogledajte ovo:"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:56
+msgid "Number of items in the feed"
+msgstr "Broj stavki u feed-u"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:58
+msgid "Total number of items that will be displayed in the feed"
+msgstr "Totalni broj stavki koje će biti prikazane u feed-u"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:63
+msgid "Default Options"
+msgstr "Default opcije"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:65
+#, php-format
+msgid "You need help completing these options? Check the %s."
+msgstr "Treba vam pomoć prilikom popunjavanja ovih opcija? Pogledajte %s."
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:68
+msgid "Default Category"
+msgstr "Default kategorija"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:73
+msgid "Default Product Type"
+msgstr "Default tip proizvoda"
+
+# @ wcgmcf
+#. translators: plugin header field 'Version'
+#: woocommerce-google-merchant-center-feed.php:0
+msgid "1.0.0"
+msgstr "1.0.0"
+
+# @ wcgmcf
+#: woocommerce-google-merchant-center-feed.php:21
+#, php-format
+msgid ""
+"WooCommerce Ultimate Google Product Feed depends on the last version of %s "
+"to work!"
+msgstr ""
+"WooCommerce Ultimate Google feed proizvoda zavisi od poslednje verzija "
+"koja   %s  radi!"
+
+# @ wcgmcf
+#: woocommerce-google-merchant-center-feed.php:21
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+# @ wcgmcf
+#: woocommerce-google-merchant-center-feed.php:75
+msgid "Settings"
+msgstr "Postavke"
+
+# @ wcgmcf
+#. translators: plugin header field 'Description'
+#: includes/class-wc-google-merchant-center-feed.php:17
+#: woocommerce-google-merchant-center-feed.php:0
+msgid "Creates a Feed to integrate with your Google Merchant Center."
+msgstr "Stvara feed za integrisanje sa vašim  Google Merchant Center."
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:96
+msgid "Google Merchant"
+msgstr "Google Merchant"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:115
+msgid "Enable this option to include in this product in your Product Feed"
+msgstr "Omogućiti ove opcije da bi bile uključene u vašem feedu proizvoda"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:16
+msgid "Google Merchant Center"
+msgstr "Google Merchant Center"
+
+# @ wcgmcf
+#. translators: plugin header field 'Name'
+#: woocommerce-google-merchant-center-feed.php:0
+msgid "WooCommerce Google Merchant Center Feed"
+msgstr "WooCommerce Google Merchant Center Feed"
+
+# @ wcgmcf
+#. translators: plugin header field 'PluginURI'
+#: woocommerce-google-merchant-center-feed.php:0
+msgid "https://github.com/claudiosmweb/woocommerce-google-merchant-center-feed"
+msgstr ""
+"https://github.com/claudiosmweb/woocommerce-google-merchant-center-feed"
+
+# @ wcgmcf
+#: includes/class-wc-google-merchant-center-feed.php:24 uninstall.php:10
+#: woocommerce-google-merchant-center-feed.php:88
+msgctxt "page slug"
+msgid "product-feed"
+msgstr "product-feed"
+
+# @ wcgmcf
+#: woocommerce-google-merchant-center-feed.php:92
+msgctxt "page name"
+msgid "Product Feed"
+msgstr "Product Feed"
