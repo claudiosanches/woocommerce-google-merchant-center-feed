@@ -30,6 +30,10 @@ This plugin was developed without any support from the Google Merchant Center, b
 
 You can contribute to the source code in our [GitHub](https://github.com/claudiosmweb/woocommerce-google-merchant-center-feed) page.
 
+= Credits =
+
+* sr_SR translation by [Borisa Djuraskovic](http://www.webhostinghub.com/)
+
 == Installation ==
 
 * Upload plugin files to your plugins folder, or install using WordPress built-in Add New Plugin installer;
