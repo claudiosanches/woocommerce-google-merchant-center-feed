@@ -189,7 +189,8 @@ class WC_GMCF_XML {
             // Availability and Price.
             $item->addChild( 'g:availability', $this->fix_availability( $options['availability'] ), $ns );
 
-            if ( $product->is_type( 'variable' ) ) {
+            if ($product->is_taxable()) $item->addChild( 'g:price', $product->get_price_including_tax() . ' ' . $currency, $ns );			
+            else if ( $product->is_type( 'variable' ) ) {
                 if ( $product->is_on_sale() ) {
                     $item->addChild( 'g:price', $product->min_variation_regular_price . ' ' . $currency, $ns );
                     $item->addChild( 'g:sale_price', $product->min_variation_price . ' ' . $currency, $ns );
