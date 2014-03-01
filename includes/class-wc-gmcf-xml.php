@@ -214,7 +214,9 @@ class WC_GMCF_XML {
                 $item->addChild( 'g:brand', '', $ns )->addCData( sanitize_text_field( $options['brand'] ) );
                 $item->addChild( 'g:gtin', $options['gtin'], $ns );
                 $item->addChild( 'g:mpn', $options['mpn'], $ns );
-            }
+            } else {
+                $item->addChild( 'g:identifier_exists', 'FALSE', $ns );
+			}
 
             // Tax and Shipping.
             if ( isset( $options['active_tax'] ) ) {
