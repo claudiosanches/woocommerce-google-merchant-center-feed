@@ -60,28 +60,6 @@ function wcgmcf_gateway_load() {
 add_action( 'plugins_loaded', 'wcgmcf_gateway_load', 0 );
 
 /**
- * Adds custom settings url in plugins page.
- *
- * @param  array $links Default links.
- *
- * @return array        Default links and settings link.
- */
-function wcgmcf_action_links( $links ) {
-
-    $settings = array(
-        'settings' => sprintf(
-            '<a href="%s">%s</a>',
-            admin_url( 'admin.php?page=woocommerce_settings&tab=integration&section=google-merchant-center' ),
-            __( 'Settings', 'wcgmcf' )
-        )
-    );
-
-    return array_merge( $settings, $links );
-}
-
-add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'wcgmcf_action_links' );
-
-/**
  * Create feed page on plugin install.
  */
 function wcgmcf_create_page() {
