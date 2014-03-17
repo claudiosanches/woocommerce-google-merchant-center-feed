@@ -72,6 +72,7 @@ The feed address is like this:
 = 1.0.5 - 15/03/2013 =
 
 * Removed the action links.
+* Added identifier_exists in the feed.
 
 = 1.0.4 - 25/11/2013 =
 

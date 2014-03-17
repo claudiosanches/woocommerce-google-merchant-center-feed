@@ -216,7 +216,7 @@ class WC_GMCF_XML {
                 $item->addChild( 'g:mpn', $options['mpn'], $ns );
             } else {
                 $item->addChild( 'g:identifier_exists', 'FALSE', $ns );
-			}
+            }
 
             // Tax and Shipping.
             if ( isset( $options['active_tax'] ) ) {
