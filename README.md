@@ -17,7 +17,7 @@ Thus you need to have an account in Google Merchant Center to use this plugin.
 
 Installing it is to create a page with your feed address like this:
 
-    http://your-site.com/product-feed
+	http://your-site.com/product-feed
 
 Use this address to feed your Merchant Center account.
 
@@ -42,7 +42,7 @@ You can contribute to the source code in our [GitHub](https://github.com/claudio
 Now you are ready to integrate the feed to your Google Merchant Center account.
 The feed address is like this:
 
-    http://your-site.com/product-feed
+	http://your-site.com/product-feed
 
 ## Frequently Asked Questions ##
 
