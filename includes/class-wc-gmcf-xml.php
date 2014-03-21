@@ -120,7 +120,9 @@ class WC_GMCF_XML {
 	 * @return string       Fixed date.
 	 */
 	protected function fix_date( $from, $to ) {
-		return date( 'Y-m-d', $from ) . 'T00:00-0000/' . date( 'Y-m-d', $to ) . 'T24:00-0000';
+		$date_to = date( 'Y-m-d', strtotime( '+1 day', strtotime( date( 'Y-m-d', $to ) ) ) );
+
+		return date( 'Y-m-d', $from ) . 'T00:00-0000/' . $date_to . 'T00:00-0000';
 	}
 
 	/**
