@@ -3,8 +3,8 @@
 **Donate link:** http://claudiosmweb.com/doacoes/  
 **Tags:** google, merchant, woocommerce, product feed  
 **Requires at least:** 3.5  
-**Tested up to:** 3.7.1  
-**Stable tag:** 1.0.5  
+**Tested up to:** 3.8.1  
+**Stable tag:** 1.0.6  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -73,6 +73,10 @@ The feed address is like this:
 
 ## Changelog ##
 
+### 1.0.6 - 21/03/2013 ###
+
+* Fixed the `g:sale_price_effective_date`.
+
 ### 1.0.5 - 15/03/2013 ###
 
 * Removed the action links.
@@ -101,9 +105,9 @@ The feed address is like this:
 
 ## Upgrade Notice ##
 
-### 1.0.3 ###
+### 1.0.6 ###
 
-* Fixed the activation and deactivation of the product in the feed.
+* Fixed the `g:sale_price_effective_date`.
 
 ## License ##
 
