@@ -61,16 +61,16 @@ add_action( 'plugins_loaded', 'wcgmcf_gateway_load', 0 );
 
 /**
  * Add rewrite rules to support /feed/wcgmcf and /wcgmcf.xml URIs
- * @param $wp_rewrite
+ * @param $rules array The existing rules
+ * @return array New rules
  */
-function wcgmcf_rewrite( $wp_rewrite ) {
-	$feed_rules        = array(
-		'feed/(.+)' => 'index.php?feed=' . $wp_rewrite->preg_index( 1 ),
-		'(.+).xml'  => 'index.php?feed=' . $wp_rewrite->preg_index( 1 ),
+function wcgmcf_rewrite( $rules ) {
+	$new_rules        = array(
+		'feed/wcgmcf' => 'index.php?feed=wcgmcf',
+		'wcgmcf.xml'  => 'index.php?feed=wcgmcf'
 	);
-	$wp_rewrite->rules = $feed_rules + $wp_rewrite->rules;
+	return $new_rules + $rules;
 }
-add_filter( 'generate_rewrite_rules', 'wcgmcf_rewrite' );
 
 /**
  * flush_rules() if our rules are not yet included
@@ -78,14 +78,13 @@ add_filter( 'generate_rewrite_rules', 'wcgmcf_rewrite' );
 function wcgmcf_flush_rules() {
 	$rules = get_option( 'rewrite_rules' );
 
-	if ( ! isset( $rules['feed/(.+)'] )
-	     || ! isset( $rules['(.+).xml'] )
+	if ( ! isset( $rules['feed/wcgmcf'] )
+	     || ! isset( $rules['wcgmcf.xml'] )
 	) {
 		global $wp_rewrite;
 		$wp_rewrite->flush_rules();
 	}
 }
-add_action( 'wp_loaded', 'wcgmcf_flush_rules' );
 
 /**
  * Executed when the wcgmcf feed is requested.
@@ -99,5 +98,7 @@ function wcgmcf_feed() {
  */
 function wcgmcf_init() {
 	add_feed( 'wcgmcf', 'wcgmcf_feed' );
+	add_filter( 'rewrite_rules_array', 'wcgmcf_rewrite' );
+	add_action( 'wp_loaded', 'wcgmcf_flush_rules' );
 }
 add_action( 'init', 'wcgmcf_init' );
