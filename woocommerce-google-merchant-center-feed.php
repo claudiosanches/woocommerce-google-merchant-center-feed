@@ -60,24 +60,45 @@ function wcgmcf_gateway_load() {
 add_action( 'plugins_loaded', 'wcgmcf_gateway_load', 0 );
 
 /**
- * Create feed page on plugin install.
+ * Add rewrite rules to support /feed/wcgmcf and /wcgmcf.xml URIs
+ * @param $rules array The existing rules
+ * @return array New rules
  */
-function wcgmcf_create_page() {
-	$slug = sanitize_title( _x( 'product-feed', 'page slug', 'wcgmcf' ) );
+function wcgmcf_rewrite( $rules ) {
+	$new_rules        = array(
+		'feed/wcgmcf' => 'index.php?feed=wcgmcf',
+		'wcgmcf.xml'  => 'index.php?feed=wcgmcf'
+	);
+	return $new_rules + $rules;
+}
 
-	if ( ! get_page_by_path( $slug ) ) {
-		$page = array(
-			'post_title'     => _x( 'Product Feed', 'page name', 'wcgmcf' ),
-			'post_name'      => $slug,
-			'post_status'    => 'publish',
-			'post_type'      => 'page',
-			'comment_status' => 'closed',
-			'ping_status'    => 'closed',
-			'post_content'   => '',
-		);
+/**
+ * flush_rules() if our rules are not yet included
+ */
+function wcgmcf_flush_rules() {
+	$rules = get_option( 'rewrite_rules' );
 
-		wp_insert_post( $page );
+	if ( ! isset( $rules['feed/wcgmcf'] )
+	     || ! isset( $rules['wcgmcf.xml'] )
+	) {
+		global $wp_rewrite;
+		$wp_rewrite->flush_rules();
 	}
 }
 
-register_activation_hook( __FILE__, 'wcgmcf_create_page' );
+/**
+ * Executed when the wcgmcf feed is requested.
+ */
+function wcgmcf_feed() {
+	load_template( WOO_GMCF_PATH . 'templates/feed.php' );
+}
+
+/**
+ * Creates the new feed type
+ */
+function wcgmcf_init() {
+	add_feed( 'wcgmcf', 'wcgmcf_feed' );
+	add_filter( 'rewrite_rules_array', 'wcgmcf_rewrite' );
+	add_action( 'wp_loaded', 'wcgmcf_flush_rules' );
+}
+add_action( 'init', 'wcgmcf_init' );
