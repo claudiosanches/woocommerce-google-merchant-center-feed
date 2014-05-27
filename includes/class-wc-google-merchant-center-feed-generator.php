@@ -1,10 +1,8 @@
 <?php
 /**
- * Google Product Feed XML.
- *
- * @since 1.0.1
+ * Google Product Feed Generator.
  */
-class WC_GMCF_XML {
+class WC_Google_Merchant_Center_Feed_Generator {
 
 	/**
 	 * Fix Condition label.
@@ -143,7 +141,7 @@ class WC_GMCF_XML {
 
 		// Create a Feed.
 		$xml = '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:g="' . $ns . '"></rss>';
-		$rss = new WC_GMCF_SimpleXML( $xml );
+		$rss = new WC_Google_Merchant_Center_Feed_SimpleXML( $xml );
 
 		// Add the channel.
 		$channel = $rss->addChild( 'channel' );
@@ -190,7 +188,7 @@ class WC_GMCF_XML {
 
 			// Availability and Price.
 			$item->addChild( 'g:availability', $this->fix_availability( $options['availability'] ), $ns );
-			if ($product->is_taxable()) {
+			if ( $product->is_taxable() ) {
 				$item->addChild( 'g:price', $product->get_price_including_tax() . ' ' . $currency, $ns );
 			} else if ( $product->is_type( 'variable' ) ) {
 				if ( $product->is_on_sale() ) {

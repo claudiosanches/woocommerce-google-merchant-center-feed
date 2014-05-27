@@ -1,19 +1,23 @@
 <?php
 /**
- * Template Name: Google Product Feed
+ * Google Product Feed Template
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
 // Sets the charset.
 @ob_clean();
 header( 'Content-type: application/xml' );
 
-// Helpers classes.
-require_once WOO_GMCF_PATH . 'includes/class-wc-gmcf-simplexml.php';
-require_once WOO_GMCF_PATH . 'includes/class-wc-gmcf-xml.php';
+$plugin_dir_path = dirname( plugin_dir_path( __FILE__ ) ) . '/';
 
-$feed = new WC_GMCF_XML;
+// Helpers classes.
+require_once $plugin_dir_path . 'includes/class-wc-google-merchant-center-feed-simplexml.php';
+require_once $plugin_dir_path . 'includes/class-wc-google-merchant-center-feed-generator.php';
+
+$feed = new WC_Google_Merchant_Center_Feed_Generator();
 echo $feed->render();
 
 exit;
