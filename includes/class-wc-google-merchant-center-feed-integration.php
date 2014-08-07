@@ -99,6 +99,7 @@ class WC_Google_Merchant_Center_Feed_Integration extends WC_Integration {
 
 		$options = get_post_meta( $post->ID, 'wc_gmcf', true );
 		$active = get_post_meta( $post->ID, 'wc_gmcf_active', true );
+		$product = get_product( get_the_ID() );
 		?>
 		<div id="wc_gmcf_tab" class="panel woocommerce_options_panel">
 			<div id="wc_gmcf_tab_active" class="options_group">
@@ -164,15 +165,15 @@ class WC_Google_Merchant_Center_Feed_Integration extends WC_Integration {
 						// Availability.
 						woocommerce_wp_select( array(
 							'id' => 'wc_gmcf[availability]',
-							'label' => __( 'Availability', 'woocommerce-google-merchant-center-feed' ),
-							'description' => __( 'Availability status of the item', 'woocommerce-google-merchant-center-feed' ),
+							'label' => __( 'Availability', 'wcgmcf' ),
+							'description' => __( 'Availability status of the item', 'wcgmcf' ),
 							'value' => isset( $options['availability'] ) ? $options['availability'] : '',
 							'options' => array(
-								__( 'in stock', 'woocommerce-google-merchant-center-feed' ),
-								__( 'available for order', 'woocommerce-google-merchant-center-feed' ),
-								__( 'out of stock', 'woocommerce-google-merchant-center-feed' ),
-								__( 'preorder', 'woocommerce-google-merchant-center-feed' )
-							)
+								$product->is_in_stock() ? __('in stock', 'wcgmcf') : __('out of stock', 'wcgmcf'),
+								__( 'available for order', 'wcgmcf' ),
+								!$product->is_in_stock() ? __('in stock', 'wcgmcf') : __('out of stock', 'wcgmcf'),
+								__( 'preorder', 'wcgmcf' )
+                                                    )
 						) );
 					?>
 				</div>
