@@ -36,19 +36,21 @@ class WC_Google_Merchant_Center_Feed_Generator {
 	 * @return string               Fixed availability.
 	 */
 	protected function fix_availability( $availability ) {
+             $product = get_product( get_the_ID() );
 		switch ( $availability ) {
+                    
 			case 1:
 				$value = 'available for order';
 				break;
 			case 2:
-				$value = 'out of stock';
+				$value = !$product->is_in_stock() ? __('in stock', 'wcgmcf') : __('out of stock', 'wcgmcf');
 				break;
 			case 3:
 				$value = 'preorder';
 				break;
 
 			default:
-				$value = 'in stock';
+				$value = $product->is_in_stock() ? __('in stock', 'wcgmcf') : __('out of stock', 'wcgmcf');
 				break;
 		}
 
